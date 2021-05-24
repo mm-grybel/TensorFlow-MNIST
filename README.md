@@ -1,2 +1,2 @@
 # TensorFlow-MNIST
-A feedforward neural network for MNIST handwritten digit classification
+A multilayer perceptron (MLP) feedforward neural network for MNIST handwritten digit classification
