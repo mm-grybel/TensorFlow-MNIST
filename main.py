@@ -23,10 +23,10 @@ loss, accuracy = model.evaluate(x_test, y_test)
 print(accuracy)
 print(loss)
 
-model.save('digits.model')
+model.save('model')
 
 for x in range(1,6):
-    img = cv.imread(f'digits/{x}.png')[:,:,0]
+    img = cv.imread(f'data/{x}.png')[:,:,0]
     img = np.invert(np.array([img]))
     prediction = model.predict(img)
     print(f'The result is: {np.argmax(prediction)}')
